@@ -2,6 +2,7 @@ package com.ssm.dao;
 
 import com.ssm.domain.RedPacket;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * 红包信息
@@ -9,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @author one
  * @date 2019/4/25
  */
-@Mapper
+@Repository
 public interface RedPacketDao {
 
     /**

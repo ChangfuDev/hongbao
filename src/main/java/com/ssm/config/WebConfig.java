@@ -21,7 +21,7 @@ import java.util.List;
  * @date 2019/4/26
  */
 @Configuration
-@ComponentScan(value = "com.*",
+@ComponentScan(value = "com.ssm.*",
         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class)})
 @EnableWebMvc
 public class WebConfig {

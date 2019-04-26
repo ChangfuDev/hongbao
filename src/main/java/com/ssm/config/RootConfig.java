@@ -1,6 +1,5 @@
 package com.ssm.config;
 
-import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
 import org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -46,7 +45,7 @@ public class RootConfig implements TransactionManagementConfigurer {
      */
     @Bean(name = "dataSource")
     public DataSource initDataSource() {
-        if (dataSource == null) {
+        if (dataSource != null) {
             return dataSource;
         }
 
@@ -77,7 +76,7 @@ public class RootConfig implements TransactionManagementConfigurer {
         sqlSessionFactoryBean.setDataSource(initDataSource());
 
         //配置MyBatis配置文件
-        Resource resource = new ClassPathResource("mybatis/mybatis-config.xml");
+        Resource resource = new ClassPathResource("com/ssm/mybatis-config.xml");
         sqlSessionFactoryBean.setConfigLocation(resource);
 
         return sqlSessionFactoryBean;
@@ -88,11 +87,12 @@ public class RootConfig implements TransactionManagementConfigurer {
      *
      * @return Mapper扫描器
      */
-    public MapperScannerConfigurer initMapperScannerConfiguret() {
+    @Bean
+    public MapperScannerConfigurer initMapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
 
-        mapperScannerConfigurer.setBasePackage("com.*");
-        mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
+        mapperScannerConfigurer.setBasePackage("com.ssm.dao");
+        mapperScannerConfigurer.setSqlSessionFactoryBeanName("SqlSessionFactory");
         mapperScannerConfigurer.setAnnotationClass(Repository.class);
         return mapperScannerConfigurer;
     }
@@ -101,6 +101,7 @@ public class RootConfig implements TransactionManagementConfigurer {
      * 实现接口方法，注册注解事务，当 @Transaction 使用的时候产生数据库事务
      */
     @Override
+    @Bean(name = "annotationDrivenTransactionManager")
     public PlatformTransactionManager annotationDrivenTransactionManager() {
         DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
 
