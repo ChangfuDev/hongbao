@@ -1,6 +1,7 @@
 package com.ssm.dao;
 
 import com.ssm.domain.UserRedPacket;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 抢红包信息
@@ -8,6 +9,7 @@ import com.ssm.domain.UserRedPacket;
  * @author one
  * @date 2019/4/26
  */
+@Mapper
 public interface UserRedPacketDao {
 
     /**
