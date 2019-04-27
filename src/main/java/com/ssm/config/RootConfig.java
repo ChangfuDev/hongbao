@@ -51,7 +51,7 @@ public class RootConfig implements TransactionManagementConfigurer {
 
         Properties properties = new Properties();
         properties.setProperty("driverClassName", "com.mysql.jdbc.Driver");
-        properties.setProperty("url", "jdbc:mysql://localhost:3306/hongbao");
+        properties.setProperty("url", "jdbc:mysql://localhost:3306/hongbao?serverTimezone=UTC & characterEncoding=utf-8");
         properties.setProperty("username", "root");
         properties.setProperty("password", "123456");
         properties.setProperty("maxIdle", "20");

@@ -1,7 +1,7 @@
 package com.ssm.dao;
 
 import com.ssm.domain.RedPacket;
-import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -19,7 +19,7 @@ public interface RedPacketDao {
      * @param id 红包id
      * @return 红包具体信息
      */
-    RedPacket getRedPacket(Long id);
+    RedPacket getRedPacket(@Param("id") Long id);
 
 
     /**

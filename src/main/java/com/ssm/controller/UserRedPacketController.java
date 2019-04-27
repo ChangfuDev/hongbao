@@ -3,7 +3,9 @@ package com.ssm.controller;
 import com.ssm.service.UserRedPacketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
@@ -23,9 +25,10 @@ public class UserRedPacketController {
         this.userRedPacketService = userRedPacketService;
     }
 
-    @RequestMapping(value = "/grapRedPacket")
+    @GetMapping(value = "/grapRedPacket")
     @ResponseBody
-    public Map<String, Object> grepRedPacket(Long redPacketId, Long userId) {
+    public Map<String, Object> grepRedPacket(@RequestParam(name = "redPacketId") Long redPacketId
+            , @RequestParam(name = "userId") Long userId) {
 
         //抢红包
         int result = userRedPacketService.grapRedPacket(redPacketId, userId);

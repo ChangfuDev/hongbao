@@ -11,6 +11,8 @@ import java.sql.Timestamp;
  */
 @Data
 public class RedPacket implements Serializable {
+    private static final long serialVersionUID = -5196106115236008960L;
+
     private Long id;
     private Long userId;
     private Double amount;
@@ -20,4 +22,6 @@ public class RedPacket implements Serializable {
     private Integer stock;
     private Integer version;
     private String note;
+
+
 }

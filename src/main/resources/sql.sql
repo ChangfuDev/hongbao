@@ -40,3 +40,10 @@ create table T_USER_RED_PACKET
 */
 insert into T_RED_PACKET(user_id, amount, send_date, total, unit_amount, stock, note)
  values(1, 200000.00, now(), 20000, 10.00, 20000,'20万元金额，2万个小红包，每个10元');
+
+
+/**
+* 插入一个200元金额，200个小红包，每个1元的红包数据
+*/
+insert into T_RED_PACKET(user_id, amount, send_date, total, unit_amount, stock, note)
+ values(1, 200.00, now(), 200, 1.00, 200,'200元金额，200个小红包，每个1元');

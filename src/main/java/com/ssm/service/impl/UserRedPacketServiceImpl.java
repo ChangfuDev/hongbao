@@ -36,11 +36,13 @@ public class UserRedPacketServiceImpl implements UserRedPacketService {
             propagation = Propagation.REQUIRED,
             rollbackFor = Exception.class)
     public int grapRedPacket(Long redPacketId, Long userId) {
+        System.out.println("redPacketId:" + redPacketId);
+        System.out.println("userId：" + userId);
         //获取红包信息
         RedPacket redPacket = redPacketDao.getRedPacket(redPacketId);
 
         //当前小红包库存大于0
-        if (redPacket.getStock() > 0) {
+        if (redPacket != null && redPacket.getStock() > 0) {
             redPacketDao.decreaseRedPacket(redPacketId);
 
             //生成抢红包信息

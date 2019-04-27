@@ -7,7 +7,7 @@
         <package name="com.ssm.domain"/>
     </typeAliases>
     <mappers>
-        <mapper resource="com/ssm/mapper/RedPacket.xml"/>
-        <mapper resource="com/ssm/mapper/UserRedPacket.xml"/>
+        <mapper resource="com/ssm/dao/RedPacket.xml"/>
+        <mapper resource="com/ssm/dao/UserRedPacket.xml"/>
     </mappers>
 </configuration>
