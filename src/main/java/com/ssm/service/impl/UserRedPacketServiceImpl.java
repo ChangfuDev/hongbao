@@ -36,14 +36,21 @@ public class UserRedPacketServiceImpl implements UserRedPacketService {
             propagation = Propagation.REQUIRED,
             rollbackFor = Exception.class)
     public int grapRedPacket(Long redPacketId, Long userId) {
-        System.out.println("redPacketId:" + redPacketId);
-        System.out.println("userId：" + userId);
-        //获取红包信息
+//       获取红包信息
         RedPacket redPacket = redPacketDao.getRedPacket(redPacketId);
+
+//        //获取红包信息 by 加锁
+//        RedPacket redPacket = redPacketDao.getRedPacketForUpdate(redPacketId);
 
         //当前小红包库存大于0
         if (redPacket != null && redPacket.getStock() > 0) {
-            redPacketDao.decreaseRedPacket(redPacketId);
+//            redPacketDao.decreaseRedPacket(redPacketId);
+
+//            再次传入线程保存的 version 旧值给 SQL 判断，是否有其他线程修改过数据
+            int update = redPacketDao.decreaseRedPacketForVersion(redPacketId, redPacket.getVersion());
+            if (update == 0) {
+                return FAILED;
+            }
 
             //生成抢红包信息
             UserRedPacket userRedPacket = new UserRedPacket();

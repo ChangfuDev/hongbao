@@ -25,9 +25,44 @@ public class UserRedPacketController {
         this.userRedPacketService = userRedPacketService;
     }
 
-    @GetMapping(value = "/grapRedPacket")
+//    抢红包
+//    @GetMapping(value = "/grapRedPacket")
+//    @ResponseBody
+//    public Map<String, Object> grepRedPacket(@RequestParam(name = "redPacketId") Long redPacketId
+//            , @RequestParam(name = "userId") Long userId) {
+//
+//        //抢红包
+//        int result = userRedPacketService.grapRedPacket(redPacketId, userId);
+//
+//        Map<String, Object> resMap = new HashMap<String, Object>(1 << 4);
+//
+//        boolean flag = result > 0;
+//        resMap.put("success", flag);
+//        resMap.put("message", flag ? "抢红包成功！" : "抢红包失败");
+//        return resMap;
+//    }
+
+//    悲观锁抢红包
+//    @GetMapping(value = "/grapRedPacketForUpdate")
+//    @ResponseBody
+//    public Map<String, Object> grapRedPacketForUpdate(@RequestParam(name = "redPacketId") Long redPacketId
+//            , @RequestParam(name = "userId") Long userId) {
+//
+//        //抢红包
+//        int result = userRedPacketService.grapRedPacket(redPacketId, userId);
+//
+//        Map<String, Object> resMap = new HashMap<String, Object>(1 << 4);
+//
+//        boolean flag = result > 0;
+//        resMap.put("success", flag);
+//        resMap.put("message", flag ? "抢红包成功！" : "抢红包失败");
+//        return resMap;
+//    }
+
+    //    乐观锁抢红包
+    @GetMapping(value = "/grapRedPacketForVersion")
     @ResponseBody
-    public Map<String, Object> grepRedPacket(@RequestParam(name = "redPacketId") Long redPacketId
+    public Map<String, Object> grapRedPacketForVersion(@RequestParam(name = "redPacketId") Long redPacketId
             , @RequestParam(name = "userId") Long userId) {
 
         //抢红包
