@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.scheduling.annotation.AsyncConfigurerSupport;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.ViewResolver;
@@ -15,6 +18,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executor;
 
 /**
  * @author one
@@ -24,7 +28,8 @@ import java.util.List;
 @ComponentScan(value = "com.ssm.*",
         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class)})
 @EnableWebMvc
-public class WebConfig {
+@EnableAsync
+public class WebConfig extends AsyncConfigurerSupport {
 
     /**
      * 初始化视图解析器
@@ -65,5 +70,20 @@ public class WebConfig {
         requestMappingHandlerAdapter.getMessageConverters().add(jackson2HttpMessageConverter);
 
         return requestMappingHandlerAdapter;
+    }
+
+    /**
+     * 要使用 @Async 必须提供一个线程池给Spring
+     *
+     * @return
+     */
+    @Override
+    public Executor getAsyncExecutor() {
+        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
+        taskExecutor.setCorePoolSize(5);
+        taskExecutor.setMaxPoolSize(10);
+        taskExecutor.setQueueCapacity(200);
+        taskExecutor.initialize();
+        return taskExecutor;
     }
 }
