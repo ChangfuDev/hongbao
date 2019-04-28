@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -21,6 +22,7 @@ import java.util.List;
  * @author one
  * @date 2019/4/27
  */
+@Service
 public class RedisRedPacketServiceImpl implements RedisRedPacketService {
 
     private final RedisTemplate redisTemplate;

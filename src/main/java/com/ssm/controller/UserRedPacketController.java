@@ -66,7 +66,7 @@ public class UserRedPacketController {
             , @RequestParam(name = "userId") Long userId) {
 
         //抢红包
-        int result = userRedPacketService.grapRedPacket(redPacketId, userId);
+        long result = userRedPacketService.grapRedPacketByRedis(redPacketId, userId);
 
         Map<String, Object> resMap = new HashMap<String, Object>(1 << 4);
 

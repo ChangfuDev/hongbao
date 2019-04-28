@@ -13,12 +13,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             //模拟3万个异步请求，进行并发
-            var max = 23000;
+            var max = 300;
             for (var i = 0; i < max; i++) {
                 $.ajax({
                     url: "./userRedPacket/grapRedPacketForVersion.do",
                     type: 'get',
-                    data: {redPacketId: "8", userId: i},
+                    data: {redPacketId: "10", userId: i},
                     //成功回调
                     success: function (result) {
 

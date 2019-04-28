@@ -1,0 +1,7 @@
+
+
+//预先缓存红包信息
+hset red_packet_10 stock 200
+
+hset red_packet_10 unit_amount 1
+
