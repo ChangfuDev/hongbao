@@ -17,7 +17,7 @@
 
 ## 笔记
 - [如何解决数据一致性问题](https://github.com/onemrc/hongbao/blob/master/node/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7.md)
-- [Lua脚本注释]（https://github.com/onemrc/hongbao/blob/master/node/Lua%E8%84%9A%E6%9C%AC%E6%B3%A8%E9%87%8A.md）
+- [Lua脚本注释](https://github.com/onemrc/hongbao/blob/master/node/Lua%E8%84%9A%E6%9C%AC%E6%B3%A8%E9%87%8A.md)
 
 ## 部署、测试指南
 
