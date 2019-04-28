@@ -56,7 +56,7 @@
 #### 查看性能方式
 
 ```
- select min(grab_time),max(grab_time) from t_user_red_packet where red_packet_id = #{red_packet_id};
+ select t.stock as stock,min(u.grab_time),max(u.grab_time),max(u.grab_time) - min(u.grab_time) as useTime  from t_user_red_packet as u , t_red_packet as t where u.red_packet_id = #{red_packet_id} and t.id = #{red_packet_id};
 ```
 
 
