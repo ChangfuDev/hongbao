@@ -8,20 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1869f3a4-958d-40ae-9e24-3ee77e65a04c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByLock.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByRedis.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserRedPacketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserRedPacketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/UserRedPacketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/UserRedPacketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/redis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/redis.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/grapPacket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/grapPacket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,7 +73,7 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="Database Element" value="15" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="84" />
           <entry key="JSP" value="24" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="11" />
@@ -95,12 +86,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4392" />
-          <entry key="JSP" value="471" />
+          <entry key="JAVA" value="4404" />
+          <entry key="JSP" value="479" />
           <entry key="Markdown" value="1418" />
-          <entry key="PLAIN_TEXT" value="295" />
+          <entry key="PLAIN_TEXT" value="301" />
           <entry key="SQL" value="286" />
-          <entry key="Scratch" value="172" />
+          <entry key="Scratch" value="186" />
           <entry key="XML" value="147" />
         </counts>
       </usages-collector>
@@ -111,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="204" column="17" lean-forward="true" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
+            <state relative-caret-position="275">
+              <caret line="191" column="22" lean-forward="true" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,24 +112,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/RedPacketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="47" selection-start-line="47" selection-end-line="48" selection-end-column="69" />
+            <state relative-caret-position="569">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/test.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1db9dfb-80b1-481d-9ad0-d4cd23bad7d9/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -159,17 +148,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="375">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="511">
+              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -186,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/UserRedPacketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+            <state relative-caret-position="375">
+              <caret line="132" column="62" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,10 +249,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/test.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/sql.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/redis.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e1db9dfb-80b1-481d-9ad0-d4cd23bad7d9/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e1db9dfb-80b1-481d-9ad0-d4cd23bad7d9/console.sql" />
       </list>
     </option>
   </component>
@@ -415,7 +404,7 @@
     <property name="SearchEverywhereHistoryKey" value="sql&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/resources/sql.sql&#10;test&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/resources/test.sql&#10;RedisRedPacketService&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/java/com/ssm/service/impl/RedisRedPacketServiceImpl.java&#10;ReIm&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java&#10;tes&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/resources/test.sql&#10;ReSer&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/java/com/ssm/service/RedPacketService.java&#10;sql.sql&#9;FILE&#9;file://E:/WebProject/hongbao/src/main/resources/sql.sql&#10;Meth&#9;PSI&#9;JAVA://java.lang.reflect.Method&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;Prox&#9;PSI&#9;JAVA://java.lang.reflect.Proxy&#10;Class&#9;PSI&#9;JAVA://java.lang.Class&#10;WebApplicationInitializer&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.jersey.JerseyAutoConfiguration.JerseyWebApplicationInitializer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556443692435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556444682232" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -648,7 +637,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556188514030</updated>
       <workItem from="1556188520550" duration="35326000" />
-      <workItem from="1556425775755" duration="14589000" />
+      <workItem from="1556425775755" duration="15424000" />
     </task>
     <task id="LOCAL-00001" summary="add sql">
       <created>1556189520722</created>
@@ -734,17 +723,23 @@
       <option name="project" value="LOCAL" />
       <updated>1556436940531</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="完成测试代码">
+      <created>1556443756938</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556443756938</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49915000" />
+    <option name="totallyTimeSpent" value="50750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -754,14 +749,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="0" y="23" width="1920" height="1057" id="Run" order="2" weight="0.29032257" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1920" height="1057" id="Run" order="2" visible="true" weight="0.29032257" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3298647" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="9" visible="true" weight="0.24557753" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.24557753" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32882413" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32882413" />
@@ -774,7 +769,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.12793177" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.12793177" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -824,7 +819,8 @@
     <MESSAGE value="优化乐观锁抢红包" />
     <MESSAGE value="新增Redis异步批量保存数据到MySQL" />
     <MESSAGE value="新增Redis抢红包" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增Redis抢红包" />
+    <MESSAGE value="完成测试代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成测试代码" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -1061,20 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/RedPacketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/Lua.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1164,30 +1146,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/UserRedPacketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/UserRedPacketService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="204" column="17" lean-forward="true" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,6 +1160,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/RedPacketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://e1db9dfb-80b1-481d-9ad0-d4cd23bad7d9/schema/hongbao/table/t_red_packet">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1205,17 +1181,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/UserRedPacketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="132" column="62" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,6 +1195,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="194" selection-start-line="4" selection-start-column="194" selection-end-line="4" selection-end-column="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/UserRedPacketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="191" column="22" lean-forward="true" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/grapPacketByVersion2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
