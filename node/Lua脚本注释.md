@@ -11,6 +11,7 @@
                 + "return 1 \n";
 ```
                 
+  ### 详细注解
   //缓存抢红包信息列表的key
   
   local listKey = 'red_packet_list_'..KEYS[1]
