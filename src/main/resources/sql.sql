@@ -43,7 +43,7 @@ insert into T_RED_PACKET(user_id, amount, send_date, total, unit_amount, stock, 
 
 
 /**
-* 插入一个200元金额，200个小红包，每个1元的红包数据
+* 插入一个1000元金额，1000个小红包，每个1元的红包数据
 */
 insert into T_RED_PACKET(user_id, amount, send_date, total, unit_amount, stock, note)
- values(1, 200.00, now(), 200, 1.00, 200,'200元金额，200个小红包，每个1元');
+ values(1, 1000.00, now(), 1000, 1.00, 1000,'1000元金额，1000个小红包，每个1元');

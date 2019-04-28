@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>模拟并发抢红包</title>
+    <title>模拟并发抢红包 --悲观锁</title>
     <script src="js/jquery.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -16,9 +16,9 @@
             var max = 1200;
             for (var i = 0; i < max; i++) {
                 $.ajax({
-                    url: "./userRedPacket/grapRedPacket.do",
+                    url: "./userRedPacket/grapRedPacketForLock.do",
                     type: 'get',
-                    data: {redPacketId: "17", userId: i},
+                    data: {redPacketId: "12", userId: i},
                     //成功回调
                     success: function (result) {
 

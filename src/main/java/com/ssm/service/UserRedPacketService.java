@@ -8,18 +8,52 @@ public interface UserRedPacketService {
 
     /**
      * 保存抢红包信息
-     *
      * @param redPacketId 红包id
      * @param userId      用户id
      * @return 抢红包信息
      */
     int grapRedPacket(Long redPacketId, Long userId);
 
+    /**
+     * 保存抢红包信息 --悲观锁
+     *
+     * @param redPacketId 红包id
+     * @param userId      用户id
+     * @return 抢红包信息
+     */
+    int grapRedPacketByLock(Long redPacketId, Long userId);
+
+    /**
+     * 保存抢红包信息 --乐观锁
+     *
+     * @param redPacketId 红包id
+     * @param userId      用户id
+     * @return 抢红包信息
+     */
+    int grapRedPacketByVersion(Long redPacketId, Long userId);
+
+    /**
+     * 保存抢红包信息 --乐观锁(时间戳重入)
+     *
+     * @param redPacketId 红包id
+     * @param userId      用户id
+     * @return 抢红包信息
+     */
+    int grapRedPacketByVersion1(Long redPacketId, Long userId);
+
+    /**
+     * 保存抢红包信息 --乐观锁(计数重入)
+     *
+     * @param redPacketId 红包id
+     * @param userId      用户id
+     * @return 抢红包信息
+     */
+    int grapRedPacketByVersion2(Long redPacketId, Long userId);
 
 //    Long grapRedPacketByRedis(Long redPacketId, Long userId);
 
     /**
-     * 通过Redis实现抢红包
+     * 保存抢红包信息  --Redis
      *
      * @param redPacketId --红包编号
      * @param userId      -- 用户编号
